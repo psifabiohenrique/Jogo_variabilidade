@@ -1,4 +1,3 @@
-const {ipcRenderer} = require('electron')
 const fs = require('fs')
 
 let configuracoes = fs.readFileSync('./config.json')
@@ -120,7 +119,7 @@ async function reforco() {
     let image = new Image()
     image.src = '../assets/RF.png'
     image.onload = function () {ctx.drawImage(image, 0, 0, 590, 590)}
-    await new Promise(done => setTimeout(()=> done(), ITI*1000));
+    await new Promise(done => setTimeout(()=> done(), ITI * 1000));
     renovaTela()
 }
 

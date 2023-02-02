@@ -25,10 +25,3 @@ app.whenReady().then(() => {
 })
 
 app.on('window-all-closed', () => {app.quit()})
-
-
-ipcMain.on('', (event, conteudoDaMensagem) => {
-    if (conteudoDaMensagem == 'config') {
-        event.reply('', config)
-    }
-})
